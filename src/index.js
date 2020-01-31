@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import * as serviceWorker from './serviceWorker'
-import { ThingListProvider } from './contexts/ThingListContext'
-import { ThingProvider } from './contexts/ThingContext'
-import App from './components/App/App'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import * as serviceWorker from "./serviceWorker";
+import { ThingListProvider } from "./contexts/ThingListContext";
+import { ThingProvider } from "./contexts/ThingContext";
+import App from "./components/App/App";
+import "./index.css";
 
-import { faStar as farStar } from '@fortawesome/free-regular-svg-icons'
+import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 
 import {
   faBookOpen,
@@ -19,8 +19,8 @@ import {
   faListUl,
   faPenAlt,
   faQuoteLeft,
-  faStar as fasStar,
-} from '@fortawesome/free-solid-svg-icons'
+  faStar as fasStar
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faGift, // logo
@@ -32,8 +32,8 @@ library.add(
   faComment,
   faQuoteLeft,
   farStar,
-  fasStar,
-)
+  fasStar
+);
 
 ReactDOM.render(
   <BrowserRouter>
@@ -43,7 +43,7 @@ ReactDOM.render(
       </ThingProvider>
     </ThingListProvider>
   </BrowserRouter>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
 
-serviceWorker.unregister()
+serviceWorker.unregister();
